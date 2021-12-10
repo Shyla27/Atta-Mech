@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+tools:context=".CarRegistration">
+
+    <LinearLayout
+        android:id="@+id/linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:padding="14dp">
+
+        <TextView
+            android:id="@+id/signup_title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+
+            android:text="Car Type"
+            android:textAllCaps="true"
+            android:textColor="@color/purple_500"
+            android:textSize="30sp"
+            android:transitionName="transition_title_text" />
+
+
+
+<com.jaredrummler.materialspinner.MaterialSpinner
+    android:id="@+id/Gender"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:hint="Toyota"
+    android:textColorHint="@color/purple_500"
+    app:met_floatingLabel="normal"
+    />
+
+
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/typeofcar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:hint="Type of Car"
+            android:textColorHint="@color/purple_500"
+            app:met_floatingLabel="normal" />
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/model"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Model of your Car"
+            android:textColorHint="@color/purple_500"
+            app:met_floatingLabel="normal" />
+
+
+
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/yearofmanufacture"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Year "
+            android:textColorHint="@color/purple_500"
+            app:met_floatingLabel="normal" />
+
+
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+
+            android:id="@+id/addCar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="10dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:background="@color/purple_500"
+            android:padding="12dp"
+            android:stateListAnimator="@null"
+            android:text="Add Car"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="12dp" />
+
+
+
+
+
+    </LinearLayout>
+
+</RelativeLayout>
